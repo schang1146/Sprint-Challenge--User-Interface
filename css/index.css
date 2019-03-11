@@ -235,6 +235,12 @@ footer nav a {
     background: dodgerblue;
 }
 
+@keyframes button-animation {
+    0% {background: white; color: black;}
+    50% {background: black; color: white;}
+    100% {background: white; color: black;}
+}
+
 button {
     background: white;
     border: 2px black solid;
@@ -244,7 +250,12 @@ button {
     margin: 20px 0px;
 }
 
+button:hover {
+    animation-name: button-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
 button a {
     text-decoration: none;
-    color: black;
 }
