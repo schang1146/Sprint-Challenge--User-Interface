@@ -69,6 +69,20 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}   
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px 0px;
+    margin-right: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-content {
@@ -85,9 +99,41 @@ p {
     padding-bottom: 20px;  
 }
 
+.top-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content-about .text-container {
+    width: 100%;
+    padding: 0 2%;
+    padding-bottom: 20px;  
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+.middle-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.middle-content-section {
+    width: 46%;
+    margin: 2%;
+    border-bottom: 1px black dashed;
+}
+
+.middle-content-section img {
+    margin-bottom: 20px;
 }
 
 .middle-content h2 {
@@ -142,5 +188,74 @@ footer nav {
 
 footer nav a {
     color: white;
+    text-decoration: none;
+}
+
+.img-jumbo, .img-jumbo-about {
+    margin: 20px 0px;
+}
+
+#box1 {
+    background: teal;
+}
+
+#box2 {
+    background: gold;
+}
+
+#box3 {
+    background: cadetblue;
+}
+
+#box4 {
+    background: coral;
+}
+
+#box5 {
+    background: crimson;
+}
+
+#box6 {
+    background: forestgreen;
+}
+
+#box7 {
+    background: darkorchid;
+}
+
+#box8 {
+    background: hotpink;
+}
+
+#box9 {
+    background: indigo;
+}
+
+#box10 {
+    background: dodgerblue;
+}
+
+@keyframes button-animation {
+    0% {background: white; color: black;}
+    50% {background: black; color: white;}
+    100% {background: white; color: black;}
+}
+
+button {
+    background: white;
+    border: 2px black solid;
+    border-radius: 12px;
+    width: 125px;
+    height: 40px;
+    margin: 20px 0px;
+}
+
+button:hover {
+    animation-name: button-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+button a {
     text-decoration: none;
 }
